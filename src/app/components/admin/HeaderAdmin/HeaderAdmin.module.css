@@ -1,0 +1,34 @@
+.empleadosContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.empleadosContainer h2 {
+  font-size: 3.5rem;
+  margin: 0;
+  padding: 4rem 3rem;
+  text-transform: uppercase;
+}
+
+.empleadosContainer ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.empleadosContainer ul li {
+  margin: 0 1rem;
+}
+
+.empleadosContainer ul li a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.empleadosContainer nav {
+  align-items: center;
+  padding: 1.5rem 2.5rem;
+  background-color: gray;
+}

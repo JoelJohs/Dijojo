@@ -1,0 +1,27 @@
+.AdminMenus {
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.LinkContainer {
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
+
+.LinkContainer a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: 2rem;
+  transition: font-size 0.5s ease-in-out;
+}
+
+.LinkContainer a:hover {
+  font-size: 2.6rem;
+}
+
+.LinkContainer hr {
+  border: 2px solid #23272b;
+  margin-top: 1rem;
+}

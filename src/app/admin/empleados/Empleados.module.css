@@ -1,0 +1,12 @@
+.mainEmpleados {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 2rem;
+  width: 100%;
+}
+
+.cardsEmpleados {
+  display: flex;
+  flex-direction: column;
+}

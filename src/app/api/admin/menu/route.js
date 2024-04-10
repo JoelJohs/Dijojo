@@ -10,7 +10,7 @@ export async function GET() {
 
 export async function POST(request) {
   const { name, description, price, sectionId } = await request.json();
-  const newFood = await prisma.menu.create({
+  const newMenu = await prisma.menu.create({
     data: {
       name,
       description,
@@ -19,5 +19,5 @@ export async function POST(request) {
     },
   });
 
-  return NextResponse.json(newFood);
+  return NextResponse.json(newMenu);
 }

@@ -1,0 +1,22 @@
+.UpbarContainer {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 3.5rem;
+  background-color: #0056b3;
+  height: 8rem;
+  border-bottom: 1px solid #1e2124;
+}
+
+.UpbarContainer h1 {
+  color: white;
+  font-size: 3.5rem;
+}
+
+.UpbarContainer p {
+  color: white;
+  font-size: 3rem;
+}

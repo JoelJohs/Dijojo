@@ -27,6 +27,7 @@ async function main() {
     data: {
       name: "admin",
       password: "admin1",
+      email: "admin@email.com",
       rolId: adminRole.id,
     },
   });
@@ -35,6 +36,7 @@ async function main() {
     data: {
       name: "waiter",
       password: "waiter1",
+      email: "waiter@email.com",
       rolId: waiterRole.id,
     },
   });
@@ -43,6 +45,7 @@ async function main() {
     data: {
       name: "cook",
       password: "cook1",
+      email: "cook@email.com",
       rolId: cookRole.id,
     },
   });

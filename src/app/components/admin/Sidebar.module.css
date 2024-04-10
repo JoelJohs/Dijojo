@@ -1,0 +1,31 @@
+.sidebarContainer {
+  position: fixed;
+  left: 0;
+  top: 8rem;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #1e2124;
+
+  height: 100vh;
+  width: 40rem;
+  padding-top: 3rem;
+  margin: 0;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleContainer h1 {
+  color: white;
+  font-size: 3rem;
+  padding: 0 0.5rem;
+  transition: font-size 0.5s ease-in-out;
+}
+
+.titleContainer h1:hover {
+  font-size: 3.1rem;
+}

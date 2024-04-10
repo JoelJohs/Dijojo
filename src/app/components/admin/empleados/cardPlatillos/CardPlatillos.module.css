@@ -1,0 +1,46 @@
+.cardPlatillos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.cardPlatillos:hover {
+  background-color: #f0f0f0;
+  border: 1px solid #c9c9c9;
+  scale: 1.01;
+}
+
+.cardPlatillos button {
+  border: none;
+  background: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.edit {
+  color: green;
+  font-weight: bold;
+}
+
+.delete {
+  color: red;
+  font-weight: bold;
+}
+
+.cardEmpleado p {
+  font-size: 1.8rem;
+}
+
+.cardEmpleado p span {
+  font-weight: bold;
+}

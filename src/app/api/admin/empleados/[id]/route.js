@@ -12,16 +12,25 @@ export async function GET(request, { params }) {
 }
 
 export async function PUT(request, { params }) {
-  const data = await request.json();
+  try {
+    const { name, password, email } = await request.json();
 
-  await prisma.user.update({
-    where: {
-      id: Number(params.id),
-    },
-    data: data,
-  });
+    await prisma.user.update({
+      where: {
+        id: Number(params.id),
+      },
+      data: {
+        name,
+        password,
+        email,
+      },
+    });
 
-  return NextResponse.json();
+    return NextResponse.json({ message: "User updated successfully" });
+  } catch (error) {
+    console.error("Error updating user:", error);
+    return NextResponse.error("Internal Server Error", { status: 500 });
+  }
 }
 
 export async function DELETE(request, { params }) {

@@ -1,0 +1,45 @@
+.cardEmpleado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 2rem;
+
+  padding: 1rem 2rem;
+  margin: 1rem;
+
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+.cardEmpleado:hover {
+  background-color: #f0f0f0;
+  border: 1px solid #c9c9c9;
+  scale: 1.01;
+}
+
+.cardEmpleado button {
+  border: none;
+  background: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.edit {
+  color: green;
+  font-weight: bold;
+}
+
+.delete {
+  color: red;
+  font-weight: bold;
+}
+
+.cardEmpleado p {
+  font-size: 1.8rem;
+}
+
+.cardEmpleado p span {
+  font-weight: bold;
+}

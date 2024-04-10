@@ -1,0 +1,15 @@
+.mainPlatillos {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 2rem;
+  width: 100%;
+}
+
+.platillosGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem 2rem 2rem;
+  margin-bottom: 3rem;
+}
