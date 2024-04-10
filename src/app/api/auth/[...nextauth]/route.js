@@ -7,34 +7,35 @@ const authOptions = {
     CredentialsProvider({
       name: "Credentials",
       credentials: {
-        name: { label: "Name", type: "text" },
-        password: { label: "Password", type: "password" },
+        email: { label: "email", type: "text", placeholder: "email@email.com" },
+        password: {
+          label: "Password",
+          type: "password",
+          placeholder: "******",
+        },
       },
       async authorize(credentials, req) {
-        console.log(credentials);
-
+        console.log("credentials", credentials);
         const userFound = await prisma.user.findUnique({
           where: {
-            name: credentials.name,
+            email: credentials.email,
           },
         });
-        if (!userFound) {
-          return null;
-        }
 
-        const isValid = userFound.password === credentials.password;
-
-        if (!isValid) {
-          return null;
-        }
+        if (!userFound)
+          throw new Error(JSON.stringify({ error: "User not found" }));
 
         return {
           id: userFound.id,
+          email: userFound.email,
           name: userFound.name,
         };
       },
     }),
   ],
+  pages: {
+    signIn: "/",
+  },
 };
 
 const handler = NextAuth(authOptions);
