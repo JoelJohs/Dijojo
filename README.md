@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Restaurante Dijojo
 
-## Getting Started
+Genuinamente no se que escribir en el readme, tal vez debi empezar a hacerlo en cuanto empece, pero ya quedo asi.
 
-First, run the development server:
+La gran mayoria de cosas relacionadas a NextJs y Backend se aprendieron sobre la marcha y a un ritmo de trabajo de 1 a 2 hrs maximas cada 2 o 3 días segun el trabajo y la escuela me dieran
+oportunidad
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Mucha de la estructura del proyecto esta mal hecha y se quedo asi por que tardaria mas arreglando eso que continuando asi, pero a comparacion del momento en que inicie
+hasta ahora, puedo identificar muchos de mis errores de diseño, los cuales espero poder corregir en, ya sea, actualizaciones proximas o en nuevos proyectos (Tanto personales como laborales)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Al punto de este commit se implementara el Login, o al menos se intentara, ya que es algo que estare aprendiendo sobre la marcha, aunque NextAuth ya esta en el archivo aun no es funcional y se debe corregir.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Fallos comicos que quiero comentar
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- No sabia si poner o no email y lo agregue de ultima, cosa que me retrazo y toco reestructurar muchas cosas, pero termino funcional
+- A la hora de hacer la API me dio dolores de cabeza que no me sirviera el "Agregar platillos" pero luego me di cuenta que tenia PUT y no POST en insomnia y por eso no funcionaba
 
-## Learn More
+## Conclusion
 
-To learn more about Next.js, take a look at the following resources:
+Pese a que realmente no se como concluir el README del proyecto, sobre todo porque aun no esta terminado, quiero agregar una ligera referencia, la cual es:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Genuinamente durante todo el proyecto, era este:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![SeAdapta](./public/SeAdapta.jpg)
